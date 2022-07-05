@@ -238,7 +238,7 @@ export const printQRIfNecessaryListener = (ev: CommonBaileysEventEmitter<any>, l
  * Use to ensure your WA connection is always on the latest version
  */
 export const fetchLatestBaileysVersion = async() => {
-	const URL = 'https://web.whatsapp.com/check-update?version=2.2222.11&platform=web'
+	const URL = 'https://web.whatsapp.com/check-update?version=1&platform=web'
 	try {
 		const result = await axios.get(URL, { responseType: 'json' })
 		const version = result.data.currentVersion.split('.')
