@@ -259,9 +259,8 @@ export const fetchLatestBaileysVersion = async() => {
  * Use to ensure your WA connection is always on the latest version
  */
 export const fetchLatestWaWebVersion = async() => {
-	const URL = 'https://web.whatsapp.com/check-update?version=1&platform=web'
 	try {
-		const result = await axios.get(URL, { responseType: 'json' })
+		const result = await axios.get('https://web.whatsapp.com/check-update?version=1&platform=web', { responseType: 'json' })
 		const version = result.data.currentVersion.split('.')
 		return {
 			version: [+version[0], +version[1], +version[2]] as WAVersion,
