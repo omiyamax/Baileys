@@ -1,8 +1,8 @@
 {
-  "name": "@adiwajshing/baileys",
+  "name": "@omiyamax/queen-lora-pro",
   "version": "4.3.0",
-  "description": "WhatsApp API",
-  "homepage": "https://github.com/adiwajshing/Baileys",
+  "description": "Queen Lora Pro WhatsApp API",
+  "homepage": "https://github.com/omiyamax/Baileys",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [
